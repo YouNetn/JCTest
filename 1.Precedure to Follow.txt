@@ -1,0 +1,16 @@
+Procedure to set a wallpaper on MAC.
+
+1. Your wallpaper should be in a PNG format and within 1MB size.
+2. Rename your wallpaper to "MacDesktop".png
+3. You have to set a cmd to push this wallpaper to MAC devices. I have added that cmd file ( File name - cmd for wallpaper copy ).
+4. Login to Admin Jumpcloud Console goto -> Commands -> Click on + -> select command -> select MAC -> select Run as root, And give a name as per your convenient.
+5. Copy the cmd's which is in the file ( file name - cmd for wallpaper copy ). Then paste this cmd to the command section and upload the wallpaper.
+6. Next goto -> Device Group/Devices -> select the Group/device and save it.
+5. Run that command so it will copy the wallpaper on end-user machines.
+
+After all this, you have to set a policy for this to set a wallpaper.
+
+1. To set a policy Login to Jumpcloud Admin Console.
+2. Goto -> Policy Management -> click on + -> click on MAC -> search for "MDM Custom Configuration Profile" -> click on "Configure".
+3. Give a convenient name in the name section for your understanding.
+4. click on Upload file and upload the config file ( File name - MACwallpaper_Config_File ).
